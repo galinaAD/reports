@@ -12,7 +12,7 @@
         {% if user.is_superuser %}
             <p>{{ form.author.label_tag }}<br>{{ form.author }}<br>{{ form.author.help_text }}</p>
         {% else %}
-            <p style="display: none">{{ form.author.label_tag }}<br>{{ form.author }}<br>{{ form.author.help_text }}</p>
+            <p style="display: none">{{ form.author }}</p>
         {% endif %}
         <input type="hidden" name="next" value="{{ next }}"><br>
         {% block create_button %}
